@@ -1,0 +1,8 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="100" fill="#243C27"/>
+  <!-- JASPER Text in Gold -->
+  <text x="100" y="104" text-anchor="middle" fill="#D5952B" font-family="'Cormorant Garamond', Georgia, serif" font-size="44" font-weight="700" letter-spacing="2">JASPER</text>
+  <!-- STUDIO Text in Gold -->
+  <text x="100" y="132" text-anchor="middle" fill="#D5952B" font-family="'Jost', sans-serif" font-size="20" font-weight="500" letter-spacing="6">STUDIO</text>
+</svg>
+

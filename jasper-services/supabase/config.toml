@@ -1,0 +1,7 @@
+project_id = "jasper-services"
+
+[storage]
+enabled = true
+
+[api]
+enabled = false

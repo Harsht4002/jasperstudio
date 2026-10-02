@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-evergreen: #243C27;
+  --color-forest: #243C27;
+  --color-gold: #D5952B;
+  --color-harvest-gold: #D5952B;
+  --color-cream: #F4EEE0;
+  --color-old-lace: #F4EEE0;
+  --color-wine: #6B1E28;
+  --color-wine-plum: #6B1E28;
+  --color-ink: #1F241C;
+  --color-surface: #FAF8F5;
+  --font-display: "Cormorant Garamond", Garamond, Georgia, serif;
+  --font-body: "Jost", "Avenir Next", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F4EEE0;
+  background-image: radial-gradient(#243C27 0.75px, transparent 0.75px), radial-gradient(#D5952B 0.75px, #F4EEE0 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  background-attachment: fixed;
+  color: #243C27;
+  font-family: "Jost", "Avenir Next", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, .h1 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 600; /* SemiBold */
+}
+
+h2, .h2 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 400; /* Regular */
+}
+
+h3, h4, h5, h6 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+label, .label-text {
+  font-family: "Jost", sans-serif;
+  font-weight: 500; /* Medium */
+}
+
+caption, .caption-text {
+  font-family: "Jost", sans-serif;
+  font-weight: 400; /* Regular */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Editorial 24px Rounded utility */
+.rounded-brand {
+  border-radius: 24px;
+}
+
+/* Soft Natural Shadow */
+.shadow-soft {
+  box-shadow: 0 12px 36px -8px rgba(36, 60, 39, 0.07), 0 4px 16px -2px rgba(36, 60, 39, 0.04);
+}
+
+.shadow-soft-hover {
+  transition: all 0.3s ease-out;
+}
+.shadow-soft-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -10px rgba(36, 60, 39, 0.12), 0 8px 20px -4px rgba(213, 149, 43, 0.15);
+}
+
+/* Official Editorial Buttons */
+.btn-primary {
+  background-color: #243C27 !important; /* Evergreen */
+  color: #F4EEE0 !important;            /* Old Lace */
+  border: 1px solid #243C27 !important;
+  border-radius: 24px !important;
+  transition: all 0.25s ease-out !important;
+}
+
+.btn-primary:hover {
+  background-color: #D5952B !important; /* Harvest Gold */
+  color: #243C27 !important;            /* Evergreen */
+  border-color: #D5952B !important;
+}
+
+.btn-secondary {
+  background-color: transparent !important;
+  color: #243C27 !important;            /* Evergreen */
+  border: 1px solid #243C27 !important;
+  border-radius: 24px !important;
+  transition: all 0.25s ease-out !important;
+}
+
+.btn-secondary:hover {
+  background-color: #243C27 !important; /* Evergreen */
+  color: #F4EEE0 !important;            /* Old Lace */
+}
+
+.btn-wine {
+  background-color: #6B1E28 !important; /* Wine Plum */
+  color: #F4EEE0 !important;            /* Old Lace */
+  border: 1px solid #6B1E28 !important;
+  border-radius: 24px !important;
+  transition: all 0.25s ease-out !important;
+}
+
+.btn-wine:hover {
+  background-color: #D5952B !important; /* Harvest Gold */
+  color: #6B1E28 !important;            /* Wine Plum */
+  border-color: #D5952B !important;
+}
+
+.btn-wine-secondary {
+  background-color: transparent !important;
+  color: #6B1E28 !important;            /* Wine Plum */
+  border: 1px solid #6B1E28 !important;
+  border-radius: 24px !important;
+  transition: all 0.25s ease-out !important;
+}
+
+.btn-wine-secondary:hover {
+  background-color: #6B1E28 !important; /* Wine Plum */
+  color: #F4EEE0 !important;            /* Old Lace */
+}
+
+.btn-primary:disabled, .btn-secondary:disabled, .btn-wine:disabled, .btn-wine-secondary:disabled {
+  opacity: 0.5 !important;
+  cursor: not-allowed !important;
+}
+
+/* Ornamental Medallion SVG Seal Background */
+.bg-seal-pattern {
+  background-image: radial-gradient(circle at center, rgba(213, 149, 43, 0.04) 0%, transparent 70%);
+}
+
