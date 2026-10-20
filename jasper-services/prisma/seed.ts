@@ -7,28 +7,52 @@ async function main() {
   // 1. Seed Categories
   const categories = [
     {
+      name: 'Home Essentials',
+      slug: 'home-essentials',
+      description: 'Crafted pieces for everyday rituals',
+      displayOrder: 10,
+    },
+    {
+      name: 'Attars',
+      slug: 'attars',
+      description: 'Traditional fragrance, bottled by hand',
+      displayOrder: 20,
+    },
+    {
+      name: 'Festive Edit',
+      slug: 'festive-edit',
+      description: 'Seasonal collections, made for celebration',
+      displayOrder: 30,
+    },
+    {
+      name: 'Accessories',
+      slug: 'accessories',
+      description: 'Small details, made to last',
+      displayOrder: 40,
+    },
+    {
       name: 'Bowls',
       slug: 'bowls',
       description: 'Handmade bowls for daily rituals and serving.',
-      displayOrder: 10,
+      displayOrder: 50,
     },
     {
       name: 'Cups',
       slug: 'cups',
       description: 'Studio cups, mugs, and small vessels.',
-      displayOrder: 20,
+      displayOrder: 60,
     },
     {
       name: 'Vases',
       slug: 'vases',
       description: 'Ceramic vessels for stems, shelves, and tables.',
-      displayOrder: 30,
+      displayOrder: 70,
     },
     {
       name: 'Plates',
       slug: 'plates',
       description: 'Small-batch plates and serving pieces.',
-      displayOrder: 40,
+      displayOrder: 80,
     },
   ];
 

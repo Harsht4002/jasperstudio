@@ -101,8 +101,8 @@ export function ProductsToolbar({
           <button
             className={`rounded-full px-5 py-2 font-body text-xs font-medium uppercase tracking-widest transition-all ${
               categorySlug === "" 
-                ? "bg-[#243C27] text-[#F4EEE0] shadow-soft" 
-                : "border border-[#243C27]/20 text-[#243C27] hover:border-[#243C27]"
+                ? "bg-[#243C27] !text-[#F4EEE0] shadow-soft" 
+                : "border border-[#243C27]/20 !text-[#243C27] hover:border-[#243C27] hover:bg-[#243C27]/5"
             }`}
             onClick={() => onCategoryChange("")}
             type="button"
@@ -113,8 +113,8 @@ export function ProductsToolbar({
             <button
               className={`rounded-full px-5 py-2 font-body text-xs font-medium uppercase tracking-widest transition-all ${
                 categorySlug === category.slug 
-                  ? "bg-[#243C27] text-[#F4EEE0] shadow-soft" 
-                  : "border border-[#243C27]/20 text-[#243C27] hover:border-[#243C27]"
+                  ? "bg-[#243C27] !text-[#F4EEE0] shadow-soft" 
+                  : "border border-[#243C27]/20 !text-[#243C27] hover:border-[#243C27] hover:bg-[#243C27]/5"
               }`}
               key={category.id}
               onClick={() => onCategoryChange(category.slug)}

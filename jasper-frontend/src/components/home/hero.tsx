@@ -17,20 +17,20 @@ export function Hero() {
             <div className="inline-flex items-center gap-2 mb-4 rounded-full border border-[#D5952B]/40 bg-[#D5952B]/10 px-4 py-1">
               <span className="size-1.5 rounded-full bg-[#D5952B]" />
               <span className="font-body text-[0.7rem] font-medium uppercase tracking-[0.25em] text-[#243C27]">
-                Heritage & Handcrafted Ceramics
+                India&apos;s Craft Traditions
               </span>
             </div>
             <h1 
               id="hero-title" 
-              className="font-display text-4xl font-semibold tracking-tight text-[#243C27] sm:text-5xl md:text-6xl lg:text-7xl leading-[1.05]"
+              className="font-display text-4xl font-semibold tracking-tight text-[#243C27] sm:text-5xl md:text-6xl lg:text-7xl leading-[1.08]"
             >
-              Handcrafted Pottery <br />
-              <span className="font-normal italic text-[#6B1E28]">&amp; Studio Vessels</span>
+              Handmade. <br className="hidden sm:inline" />
+              <span className="font-normal italic text-[#6B1E28]">Artistic.</span> Rare.
             </h1>
           </div>
 
           <p className="max-w-xl font-body text-base font-normal leading-relaxed text-[#243C27]/80 sm:text-lg">
-            Every piece is born from clay, water, and fire—gathered with intention and shaped by dedicated artisans. Discover small-batch ceramics that bring warmth, texture, and quiet elegance into your everyday living.
+            Jasper Studio brings India&apos;s craft traditions into the everyday — each piece shaped by hand, carrying the quiet imperfections that make it truly one of a kind.
           </p>
 
           <div className="flex flex-wrap items-center gap-5 pt-2">
@@ -38,7 +38,7 @@ export function Hero() {
               href="/shop"
               className="btn-primary inline-flex min-h-13 items-center justify-center rounded-[24px] px-8 text-xs font-medium uppercase tracking-widest shadow-soft hover:shadow-soft-hover"
             >
-              <span>Shop Collection</span>
+              <span>Explore the Collection</span>
               <span className="ml-2 font-normal transition-transform duration-200 group-hover:translate-x-1">&rarr;</span>
             </a>
             <a
@@ -59,13 +59,14 @@ export function Hero() {
                 <span className="font-body text-[0.65rem] font-medium uppercase tracking-[0.3em] text-[#D5952B]">Exhibition Catalogue No. 01</span>
                 
                 <div className="flex flex-col items-center">
-                  <div className="size-16 rounded-full border border-[#D5952B]/40 flex items-center justify-center mb-3 bg-[#243C27]/40">
-                    <span className="font-display text-2xl font-semibold text-[#F4EEE0]">J</span>
+                  <div className="size-16 rounded-full border border-[#D5952B]/40 flex items-center justify-center mb-3 bg-[#243C27]/40 overflow-hidden shadow-sm">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img src="/images/brand/logo-placeholder.svg" alt="Jasper Studio Logo" className="size-full object-contain" />
                   </div>
-                  <span className="font-display text-2xl font-semibold text-[#F4EEE0] tracking-wide">Jasper Studio</span>
+                  <span className="font-brand-title text-2xl text-[#F4EEE0] tracking-wider">Jasper Studio</span>
                 </div>
 
-                <span className="font-body text-[0.65rem] font-medium uppercase tracking-[0.35em] text-[#F4EEE0]/70">Curated Pottery • Est. 2026</span>
+                <span className="font-body text-[0.65rem] font-medium uppercase tracking-[0.35em] text-[#F4EEE0]/70">Artisanal Objects • Est. 2026</span>
               </div>
             </div>
           </div>

@@ -12,10 +12,13 @@ export function Footer() {
             href="/home"
             aria-label="Jasper Studio home"
           >
-            <span className="flex size-14 items-center justify-center rounded-full bg-[#FAF8F5] text-[#243C27] shadow-soft font-display text-2xl font-semibold border-2 border-[#D5952B] group-hover:scale-105 transition-transform">
-              J
-            </span>
-            <span className="font-display text-3xl sm:text-4xl font-semibold tracking-wide text-[#F4EEE0] group-hover:text-[#D5952B] transition-colors">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/brand/logo-placeholder.svg"
+              alt="Jasper Studio Logo"
+              className="size-14 rounded-full object-contain shadow-soft group-hover:scale-105 transition-transform"
+            />
+            <span className="font-brand-title text-3xl sm:text-4xl tracking-wider text-[#F4EEE0] group-hover:text-[#D5952B] transition-colors">
               Jasper Studio
             </span>
           </a>

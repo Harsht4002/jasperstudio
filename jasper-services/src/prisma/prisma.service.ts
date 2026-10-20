@@ -8,7 +8,13 @@ export class PrismaService
 {
   async onModuleInit() {
     if (process.env.DATABASE_URL) {
-      await this.$connect();
+      try {
+        await this.$connect();
+      } catch (error) {
+        console.warn('Initial Prisma connection attempt failed, retrying in 2 seconds...', error?.message);
+        await new Promise((resolve) => setTimeout(resolve, 2000));
+        await this.$connect();
+      }
     }
   }
 

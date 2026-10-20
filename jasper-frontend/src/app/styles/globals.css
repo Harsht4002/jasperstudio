@@ -1,6 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Thailandesa Regular';
+  src: url('/fonts/Thailandesa-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Thailandesa';
+  src: url('/fonts/Thailandesa-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --color-evergreen: #243C27;
   --color-forest: #243C27;
@@ -14,6 +30,11 @@
   --color-surface: #FAF8F5;
   --font-display: "Cormorant Garamond", Garamond, Georgia, serif;
   --font-body: "Jost", "Avenir Next", Arial, sans-serif;
+  --font-title: "Thailandesa Regular", "Thailandesa", serif;
+}
+
+.font-brand-title {
+  font-family: 'Thailandesa Regular', 'Thailandesa', serif;
 }
 
 html {
@@ -55,18 +76,19 @@ caption, .caption-text {
   font-weight: 400; /* Regular */
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@layer base {
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 
-button, input, select, textarea {
-  font-family: inherit;
-  color: inherit;
-}
+  button, input, select, textarea {
+    font-family: inherit;
+  }
 
-button {
-  cursor: pointer;
+  button {
+    cursor: pointer;
+  }
 }
 
 /* Editorial 24px Rounded utility */

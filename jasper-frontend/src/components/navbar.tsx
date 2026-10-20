@@ -64,14 +64,17 @@ export function Navbar() {
       <div className="mx-auto flex items-center justify-between max-w-[1360px]">
         {/* Brand Medallion Logo & Title */}
         <a
-          className="flex items-center gap-3 font-display text-xl font-bold tracking-normal text-[#243C27] hover:opacity-90 transition-opacity"
+          className="flex items-center gap-3 text-xl tracking-normal text-[#243C27] hover:opacity-90 transition-opacity"
           href="/home"
           aria-label="Jasper Studio home"
         >
-          <span className="flex size-9 items-center justify-center rounded-full bg-[#243C27] text-[#F4EEE0] shadow-sm font-display text-sm font-semibold border border-[#D5952B]">
-            J
-          </span>
-          <span className="font-display font-semibold tracking-wide text-2xl text-[#243C27]">Jasper Studio</span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/brand/logo-placeholder.svg"
+            alt="Jasper Studio Logo"
+            className="size-9 rounded-full object-contain shadow-sm"
+          />
+          <span className="font-brand-title tracking-wider text-2xl text-[#243C27]">Jasper Studio</span>
         </a>
 
         {/* Desktop Navigation */}

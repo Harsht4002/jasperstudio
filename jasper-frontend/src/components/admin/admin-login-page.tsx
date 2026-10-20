@@ -89,7 +89,11 @@ export function AdminLoginPage() {
             <div className="grid gap-5">
               <div className="grid grid-cols-2 border border-wine text-xs font-bold uppercase">
                 <button
-                  className={`min-h-11 ${mode === "login" ? "bg-wine text-cream" : "bg-transparent"}`}
+                  className={`min-h-11 transition-colors ${
+                    mode === "login"
+                      ? "bg-wine !text-[#F4EEE0]"
+                      : "bg-transparent !text-[#6B1E28] hover:bg-wine/10"
+                  }`}
                   onClick={() => {
                     setMode("login");
                     setError("");
@@ -99,7 +103,11 @@ export function AdminLoginPage() {
                   Login
                 </button>
                 <button
-                  className={`min-h-11 border-l border-wine ${mode === "register" ? "bg-wine text-cream" : "bg-transparent"}`}
+                  className={`min-h-11 border-l border-wine transition-colors ${
+                    mode === "register"
+                      ? "bg-wine !text-[#F4EEE0]"
+                      : "bg-transparent !text-[#6B1E28] hover:bg-wine/10"
+                  }`}
                   onClick={() => {
                     setMode("register");
                     setError("");
@@ -162,7 +170,7 @@ export function AdminLoginPage() {
               ) : null}
 
               <button
-                className="btn-primary min-h-12 px-5 text-xs font-bold uppercase"
+                className="btn-primary min-h-12 px-5 text-xs font-bold uppercase !text-[#F4EEE0]"
                 disabled={isSubmitting}
                 type="submit"
               >
