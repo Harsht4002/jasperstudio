@@ -9,8 +9,7 @@ const navItems = [
   { label: "Home", href: "/home" },
   { label: "Shop", href: "/shop" },
   { label: "About", href: "/home#about" },
-  { label: "FAQ", href: "/home#faq" },
-  { label: "Admin Login", href: "/admin/login" }
+  { label: "Admin Login", href: "/admin/login" },
 ];
 
 export function Navbar() {
