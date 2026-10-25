@@ -68,13 +68,7 @@ export function Navbar() {
           href="/home"
           aria-label="Jasper Studio home"
         >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/images/brand/logo-placeholder.svg"
-            alt="Jasper Studio Logo"
-            className="size-9 rounded-full object-contain shadow-sm"
-          />
-          <span className="font-brand-title tracking-wider text-2xl text-[#243C27]">Jasper Studio</span>
+          <span className="font-brand-title tracking-wider text-2xl text-[#D5952B]">Jasper Studio</span>
         </a>
 
         {/* Desktop Navigation */}
