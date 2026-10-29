@@ -6,7 +6,7 @@ export function ProductsHero() {
           EXHIBITION CATALOGUE
         </p>
         <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-semibold text-[#243C27] leading-tight">
-          Curated Collection \u0026amp; New Arrivals
+          Curated Collection
         </h1>
       </div>
       <p className="mt-4 md:mt-0 max-w-md font-body text-base leading-relaxed text-[#243C27]/80 font-normal">
