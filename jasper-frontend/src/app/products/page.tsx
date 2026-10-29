@@ -4,7 +4,7 @@ import { ShopPage } from "@/components/shop/shop-page";
 
 export const metadata: Metadata = {
   title: "Products | Jasper Studio",
-  description: "Browse our collection of handcrafted ceramic products."
+  description: "Browse our collection of new arrivals and featured products."
 };
 
 export default function Page() {

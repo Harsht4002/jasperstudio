@@ -154,7 +154,7 @@ export function ProductDetailsPage() {
                 <div className="my-6 h-px w-full bg-[#243C27]/10" />
 
                 <p className="font-body text-base leading-relaxed text-[#243C27]/85 font-normal">
-                  {product.description ?? "A handcrafted studio ceramic piece, shaped individually with raw minerals and custom glazes to reflect natural textures, tactile elegance, and daily ritual."}
+                  {product.description ?? "A handcrafted studio piece, thoughtfully designed and crafted to bring daily elegance and tactile richness."}
                 </p>
 
                 <div className="mt-8 border-y border-[#243C27]/10 py-6">

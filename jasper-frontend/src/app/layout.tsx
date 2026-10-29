@@ -3,8 +3,8 @@ import "@/app/styles/globals.css";
 import { CartProvider } from "@/store/cart-store";
 
 export const metadata: Metadata = {
-  title: "Jasper Studio | Handcrafted Ceramics",
-  description: "Handcrafted ceramics, small-batch pottery, and studio vessels made with care.",
+  title: "Jasper Studio | New Arrivals",
+  description: "New arrivals, curated collections, and featured products made with care.",
   icons: {
     icon: "/images/brand/logo-placeholder.svg",
     shortcut: "/images/brand/logo-placeholder.svg",

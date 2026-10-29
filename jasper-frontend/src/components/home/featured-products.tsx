@@ -10,40 +10,7 @@ import { SectionHeading } from "./section-heading";
 
 import { RevealSection } from "../scroll-reveal";
 
-const fallbackProducts: Product[] = [
-  {
-    id: "stoneware-bowl",
-    name: "Stoneware Bowl",
-    slug: "stoneware-bowl",
-    price: 2800,
-    category: { id: "bowls", name: "Bowls", slug: "bowls" },
-    variants: [{ id: "stoneware-bowl-default", name: "Default" }]
-  },
-  {
-    id: "stacked-cup",
-    name: "Stacked Cup",
-    slug: "stacked-cup",
-    price: 1450,
-    category: { id: "cups", name: "Cups", slug: "cups" },
-    variants: [{ id: "stacked-cup-default", name: "Default" }]
-  },
-  {
-    id: "studio-vase",
-    name: "Studio Vase",
-    slug: "studio-vase",
-    price: 3900,
-    category: { id: "vases", name: "Vases", slug: "vases" },
-    variants: [{ id: "studio-vase-default", name: "Default" }]
-  },
-  {
-    id: "serving-plate",
-    name: "Serving Plate",
-    slug: "serving-plate",
-    price: 2200,
-    category: { id: "plates", name: "Plates", slug: "plates" },
-    variants: [{ id: "serving-plate-default", name: "Default" }]
-  }
-];
+const fallbackProducts: Product[] = [];
 
 const isEmpty = (response: PaginatedResponse<Product>) => response.data.length === 0;
 
@@ -63,7 +30,7 @@ export function FeaturedProducts() {
         aria-labelledby="products-title"
       >
         <div className="flex items-end justify-between gap-4 max-sm:block">
-          <SectionHeading eyebrow="Curated Gallery" title="Recent Ceramic Works" />
+          <SectionHeading eyebrow="Curated Gallery" title="New Arrivals" />
           <a className="mb-1 inline-flex items-center gap-2 font-body text-xs font-medium uppercase tracking-widest text-[#243C27] hover:text-[#D5952B] transition-colors max-sm:mt-4" href="/shop">
             <span>Explore Full Catalogue</span>
             <span className="font-normal">&rarr;</span>

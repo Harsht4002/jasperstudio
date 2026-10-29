@@ -113,7 +113,7 @@ export function CartPage() {
             </div>
             <h2 className="mb-3 font-display text-3xl sm:text-4xl font-normal text-[#243C27]">Your cart is currently empty</h2>
             <p className="mb-8 max-w-md font-body text-base text-[#243C27]/80 leading-relaxed">
-              Explore our curated catalogue of studio ceramics, stoneware vessels, and handcrafted tableware.
+              Explore our curated catalogue of new arrivals and featured products.
             </p>
             <Link
               href="/shop"
